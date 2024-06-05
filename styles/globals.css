@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  line-height: 160% !important;
+  letter-spacing: 0.5px;
+}
+
+.bottom-tab-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.tab-content {
+  flex: 1;
+}
+
+.tab-bar {
+  display: flex;
+  background-color: #ddf3f0;
+  /* border-top: 1px solid #ddd; */
+  position: fixed;
+  bottom: 16px !important;
+  left: 16px !important;
+  right: 16px !important;
+  border-radius: 10px;
+  /* 
+  bottom: 0px;
+  left: 0px;
+  right: 0px; */
+}
+
+.tab {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 7px;
+  color: #00a991;
+}
+
+.selected {
+  color: #003b33;
+  font-weight: 500;
+}
+
+.ant-drawer-header {
+  position: absolute !important;
+  display: none !important;
+}
+
+.ant-drawer-body {
+  background: #00a991;
+}
+
+ul li.active a {
+  font-weight: 700;
+  color: #003b33;
+  animation-duration: 500;
+  transition: ease-in-out;
+}
+
+.overlay {
+  height: 100%;
+  background: linear-gradient(
+    1.58deg,
+    rgba(0, 59, 51, 0.8) -19.59%,
+    rgba(0, 243, 210, 0) 113.53%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 16px;
+}
+.overlay2 {
+  height: 100%;
+  background: linear-gradient(
+    1.58deg,
+    rgba(0, 59, 51, 0.8) -19.59%,
+    rgba(0, 243, 210, 0) 113.53%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 40px;
+}
+
+/* .slick-slide > div {
+  padding: 4px 4px;
+} */
+
+.alice-carousel__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alice-carousel__dots-item {
+  height: 5px !important;
+  width: 50px !important;
+  background-color: #cdefea !important;
+  border-radius: 44px !important;
+}
+
+.alice-carousel__dots-item.__active {
+  background-color: #00a991 !important;
+}
+
+.ant-slider .ant-slider-handle {
+  display: none;
+}
+
+.ant-slider.ant-slider-disabled .ant-slider-track {
+  background: #00a991 !important;
+}
+.ant-spin-dot-item {
+  background-color: #00a991 !important;
+}
